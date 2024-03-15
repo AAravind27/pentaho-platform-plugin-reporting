@@ -1,7 +1,7 @@
 /*!
  * HITACHI VANTARA PROPRIETARY AND CONFIDENTIAL
  *
- * Copyright 2002 - 2019 Hitachi Vantara. All rights reserved.
+ * Copyright 2002 - 2024 Hitachi Vantara. All rights reserved.
  *
  * NOTICE: All information including source code contained herein is, and
  * remains the sole property of Hitachi Vantara and its licensors. The intellectual
@@ -29,7 +29,9 @@
   require.config({
     bundles: {
       "reportviewer/reportviewer-main-module": [
+        "common-ui/util/pentaho-csrf",
         "common-repo/pentaho-ajax",
+        "common-ui/repo/pentaho-ajax",
         "dojo/has",
         "dojo/_base/config",
         "dojo/_base/kernel",
@@ -142,8 +144,11 @@
         "dijit/Dialog",
         "dojo/text!pentaho/common/SmallImageButton.html",
         "pentaho/common/SmallImageButton",
+        "jquery",
+        "common-ui/util/_focus",
         "pentaho/common/Dialog",
         "pentaho/reportviewer/ReportDialog",
+        "common-ui/util/_a11y",
         "jquery",
         "dojo/text!dijit/templates/ProgressBar.html",
         "dijit/ProgressBar",
@@ -153,7 +158,6 @@
         "cdf/lib/Base",
         "cdf/Logger",
         "common-ui/util/GUIDHelper",
-        "jquery",
         "cdf/lib/CCC/def",
         "cdf/lib/CCC/protovis-compat",
         "cdf/lib/CCC/protovis",
@@ -336,7 +340,9 @@
         "pentaho/common/RowLimitExceededDialog"
       ],
       "reportviewer/reportviewer-app": [
+        "common-ui/util/pentaho-csrf",
         "common-repo/pentaho-ajax",
+        "common-ui/repo/pentaho-ajax",
         "dojo/has",
         "dojo/_base/config",
         "dojo/_base/kernel",
@@ -449,8 +455,11 @@
         "dijit/Dialog",
         "dojo/text!pentaho/common/SmallImageButton.html",
         "pentaho/common/SmallImageButton",
+        "jquery",
+        "common-ui/util/_focus",
         "pentaho/common/Dialog",
         "pentaho/reportviewer/ReportDialog",
+        "common-ui/util/_a11y",
         "jquery",
         "dojo/text!dijit/templates/ProgressBar.html",
         "dijit/ProgressBar",
@@ -460,7 +469,6 @@
         "cdf/lib/Base",
         "cdf/Logger",
         "common-ui/util/GUIDHelper",
-        "jquery",
         "cdf/lib/CCC/def",
         "cdf/lib/CCC/protovis-compat",
         "cdf/lib/CCC/protovis",
